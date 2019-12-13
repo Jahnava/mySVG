@@ -1,11 +1,9 @@
-/* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
   from {
     fill: black; }
   to {
     fill: grey; } }
 
-/* Standard syntax */
 @keyframes example {
   from {
     fill: black; }
@@ -19,4 +17,19 @@
   -webkit-animation-duration: 4s;
   /* Safari 4.0 - 8.0 */
   animation-name: example;
-  animation-duration: 4s; }
+  animation-duration: 19s;
+  animation-iteration-count: infinite; }
+
+.mouth {
+  stroke-dasharray: 1000;
+  animation: dash 18s linear;
+  animation-iteration-count: infinite; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 10;
+    transform: scale(0.8);
+    transform-origin: 260px 311px; } }
+
+.love {
+  float: right; }
