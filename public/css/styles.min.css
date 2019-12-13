@@ -29,5 +29,10 @@
     transform: scale(0.8);
     transform-origin: 260px 311px; } }
 
-.love {
-  float: right; }
+.lights {
+  stroke-dasharray: 100;
+  animation: dash 5s linear; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000; } }

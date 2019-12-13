@@ -35,6 +35,13 @@
   }
 }
 
-.love{
-  float: right;
+.lights {
+  stroke-dasharray: 100;
+  animation: dash 5s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
 }
