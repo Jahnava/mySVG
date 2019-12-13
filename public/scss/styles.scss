@@ -1,5 +1,23 @@
-body {
-  background-color: blue;
-  height: 100%;
-  width: 100%;
+@mixin pupil {
+   fill: black;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: example;
+   animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {fill: black;}
+  to {fill: grey;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {fill: black;}
+  to {fill: grey;}
+}
+
+.left-pupil, .right-pupil {
+@include pupil;
 }

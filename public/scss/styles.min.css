@@ -1,1 +1,1 @@
-body{background-color:blue;height:100%;width:100%}
+@-webkit-keyframes example{from{fill:black}to{fill:grey}}@keyframes example{from{fill:black}to{fill:grey}}.left-pupil,.right-pupil{fill:black;-webkit-animation-name:example;-webkit-animation-duration:4s;animation-name:example;animation-duration:4s}
