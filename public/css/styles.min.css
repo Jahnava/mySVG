@@ -1,27 +1,5 @@
-@-webkit-keyframes example {
-  from {
-    fill: black; }
-  to {
-    fill: grey; } }
-
-@keyframes example {
-  from {
-    fill: black; }
-  to {
-    fill: grey; } }
-
-.left-pupil, .right-pupil {
-  fill: black;
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 4s;
-  animation-name: example;
-  animation-duration: 19s;
-  animation-iteration-count: infinite; }
-
-.mouth {
-  stroke-dasharray: 1000;
-  animation: dash 18s linear;
-  animation-iteration-count: infinite; }
+body {
+  background-color: lightblue; }
 
 @keyframes dash {
   to {
@@ -30,9 +8,81 @@
     transform-origin: 260px 311px; } }
 
 .lights {
-  stroke-dasharray: 100;
-  animation: dash 5s linear; }
+  stroke-dasharray: 5;
+  animation: dash 35s linear; }
 
 @keyframes dash {
   to {
     stroke-dashoffset: 1000; } }
+
+.ornament {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  -webkit-animation: example infinite;
+  animation: example 4s infinite;
+  animation-name: example;
+  animation-duration: 4s; }
+
+@-webkit-keyframes example {
+  from {
+    fill: red;
+    stroke: red; }
+  to {
+    fill: #800020;
+    stroke: #800020; } }
+
+@keyframes example {
+  from {
+    fill: red;
+    stroke: red; }
+  to {
+    fill: #800020;
+    stroke: #800020; } }
+
+.ornament1 {
+  -webkit-animation-name: example1;
+  -webkit-animation-duration: 4s;
+  -webkit-animation: example1 infinite;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation: example1 4s infinite; }
+
+@-webkit-keyframes example1 {
+  from {
+    fill: #800020;
+    stroke: #800020; }
+  to {
+    fill: red;
+    stroke: red; } }
+
+@keyframes example1 {
+  from {
+    fill: #800020;
+    stroke: #800020; }
+  to {
+    fill: red;
+    stroke: red; } }
+
+.star {
+  -webkit-animation-name: twinkle;
+  -webkit-animation-duration: 4s;
+  -webkit-animation: twinkle infinite;
+  animation: twinkle 4s infinite;
+  animation-name: twinkle;
+  animation-duration: 4s; }
+
+@-webkit-keyframes twinkle {
+  from {
+    fill: #ffff00;
+    stroke: #ffff00; }
+  to {
+    fill: #ffff00;
+    stroke: #ffff00; } }
+
+@keyframes twinkle {
+  from {
+    fill: #ffff00;
+    stroke: #ffff00; }
+  to {
+    fill: #ffff00;
+    stroke: #ffff00; } }
